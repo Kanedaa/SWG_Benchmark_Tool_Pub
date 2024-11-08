@@ -1,4 +1,4 @@
-This is a straightforward Python 3 script that has been converted into an executable (.exe) application.
+This is a straightforward Python 3 script that has been converted into an executable (.exe) application for Windows10/11 hosts.
 
 Administrative privileges are necessary for its operation. As this code is not digitally signed or endorsed by Microsoft, 
 adjustments to the security settings of the test host may be required.
