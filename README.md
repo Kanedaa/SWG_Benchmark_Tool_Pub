@@ -18,17 +18,20 @@ and the initial result is printed immediately upon launching the tool. The secon
 Customers may reconfigure the host's DNS server and repeat the test. Depending on the DNS server's location, 
 it should theoretically indicate the nearest SWG to that server.
 
-Test #3:
+Test #3
 
-The third test also utilizes information from: https://geofeed.network.strln.net. Similar to the first test, 
-this test identifies which IPs respond to a ping. Additionally, it checks whether the proxy port is open on those IPs.
+The third test leverages information from the swg_dc.json list, which is hosted on GitHub. This test executes a series of ping tests (both ICMP and TCP) and subsequently verifies whether the selected IP address is listening on port 80.
 
-The application requires access to both the C:\ProgramData\Cisco\Cisco Secure Client\Umbrella\data\ and C:\ProgramData\Cisco\Cisco Secure Client\Umbrella\SWG\ directories, 
-as well as permission to manage services. This is necessary to stop and start the csc_vpnagent process.
+Please note that the application requires access to the following directories:
 
-Due to certain unresolved issues, we are currently unable to use the Mumbai, Chennai, and San Jose SWG DCs. 
-I am in contact with the engineering team to gather more details and enhance the code, ensuring all SWG DCs can be fully utilized.
+    C:\ProgramData\Cisco\Cisco Secure Client\Umbrella\data\
+    C:\ProgramData\Cisco\Cisco Secure Client\Umbrella\SWG\
 
+Additionally, it is necessary to have permission to manage services, as this is essential for starting and stopping the csc_vpnagent process.
+
+It is important to mention that this test is not flawless; other IPs dedicated to SWG range may also be listening on port 80. Moreover, due to CAPTCHA restrictions on the page at https://cachecheck.opendns.com/, automation of this test is currently not feasible.
+
+In the future, if time permits, I may attempt to enhance the reliability of this third test.
 
 
 
