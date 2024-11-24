@@ -18,6 +18,8 @@ and the initial result is printed immediately upon launching the tool. The secon
 Customers may reconfigure the host's DNS server and repeat the test. Depending on the DNS server's location, 
 it should theoretically indicate the nearest SWG to that server.
 
+With version 1.1 this test is more reliable as we are using Scappy, which allows us to craft and send raw packets.
+
 Test #3
 
 The third test leverages information from the swg_dc.json list, which is hosted on GitHub. This test executes a series of ping tests (both ICMP and TCP) and subsequently verifies whether the selected IP address is listening on port 80.
@@ -29,11 +31,11 @@ Please note that the application requires access to the following directories:
 
 Additionally, it is necessary to have permission to manage services, as this is essential for starting and stopping the csc_vpnagent process.
 
-It is important to mention that this test is not flawless; other IPs dedicated to SWG range may also be listening on port 80. Moreover, due to CAPTCHA restrictions on the page at https://cachecheck.opendns.com/, automation of this test is currently not feasible.
+It is important to mention that this test isn't perfect. Some IPs in the SWG range that aren't meant for SWG proxy services might still respond on port 80, which could affect the results. Also, because https://cachecheck.opendns.com/ uses CAPTCHA, we can't fully automate this part of the test right now. 
 
 In the future, if time permits, I may attempt to enhance the reliability of this third test.
 
-
+Starting with version 1.1, the tool now supports testing against SWG DCs based in India.
 
 --------------------------------------------------------------------------------------------
 
