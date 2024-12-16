@@ -32,14 +32,12 @@ Please note that the application requires access to the following directories:
 
 Additionally, it is necessary to have permission to manage services, as this is essential for starting and stopping the csc_vpnagent process.
 
-It is important to mention that this test isn't perfect. Some IPs in the SWG range that aren't meant for SWG proxy services might still respond on port 80, which could affect the results. Also, because https://cachecheck.opendns.com/ uses CAPTCHA, we can't fully automate this part of the test right now. 
+With version 1.1, this test is more reliable as it now fetches confirmed SWG DC IPs from the GitHub repository, which is updated every 5 hours with fresh data.
 
-In the future, if time permits, I may attempt to enhance the reliability of this third test.
-
-Starting with version 1.1, the tool now supports testing against SWG DCs based in India.
+Starting with version 1.1, the tool now supports testing against SWG DCs located in India.
 
 --------------------------------------------------------------------------------------------
 
 If you would like to share feedback, please feel free to reach out via email or LinkedIn.
-kporzezr@cisco.com
+conrad.pretorian@gmail.com
 https://www.linkedin.com/in/konrad-porzezynski/
