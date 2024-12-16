@@ -9,6 +9,7 @@ Test #1:
 
 The first test involves performing a ping check on a list of IP addresses available at: https://geofeed.network.strln.net. 
 The process involves examining all subnets associated with each SWG Data Center (DC) to identify which IPs respond to the ping request.
+With version 1.2, this test runs significantly faster compared to earlier versions.
 
 Test #2:
 
@@ -18,7 +19,7 @@ and the initial result is printed immediately upon launching the tool. The secon
 Customers may reconfigure the host's DNS server and repeat the test. Depending on the DNS server's location, 
 it should theoretically indicate the nearest SWG to that server.
 
-With version 1.1 this test is more reliable as we are using Scapy, which allows us to craft and send raw packets.
+Starting with version 1.1 this test is more reliable as we are using Scapy, which allows us to craft and send raw packets.
 
 Test #3
 
