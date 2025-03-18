@@ -34,7 +34,7 @@ Additionally, it is necessary to have permission to manage services, as this is 
 
 With version 1.1, this test is more reliable as it now fetches confirmed SWG DC IPs from the GitHub repository, which is updated every 5 hours with fresh data.
 
-Starting with version 1.1, the tool now supports testing against SWG DCs located in India.
+Starting with version 1.2, the tool now supports testing against SWG DCs located in India.
 
 --------------------------------------------------------------------------------------------
 
