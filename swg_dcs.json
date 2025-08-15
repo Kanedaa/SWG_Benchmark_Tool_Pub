@@ -1,7 +1,7 @@
 {
   "swg_dcs": [
     {
-      "dc": "Amsterdam",
+      "dc": "Amsterdm",
       "subnets": ["146.112.244.0/24", "146.112.48.0/24"]
     },
     {
