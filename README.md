@@ -21,7 +21,7 @@ it should theoretically indicate the nearest SWG to that server.
 
 Starting with version 1.1 this test is more reliable as we are using Scapy, which allows us to craft and send raw packets.
 
-Test #3
+Test #3:
 
 The third test leverages information from the swg_dc.json list, which is hosted on GitHub. This test executes a series of ping tests (both ICMP and TCP) and subsequently verifies whether the selected IP address is listening on port 80.
 
